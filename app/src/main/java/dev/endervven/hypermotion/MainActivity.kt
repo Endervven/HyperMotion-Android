@@ -102,7 +102,7 @@ private class MotionView(context: Context) : View(context), Choreographer.FrameC
         paint.textSize = dp(size)
         paint.typeface = if (bold) Typeface.create("sans-serif", Typeface.BOLD)
                          else Typeface.create("sans-serif", Typeface.NORMAL)
-        c.drawText(value, x, y, paint)
+        c.drawText(value, dp(x), dp(y), paint)
     }
 
     private fun roundRect(c: Canvas, l: Float, t: Float, r: Float, b: Float,
